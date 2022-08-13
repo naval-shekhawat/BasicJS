@@ -3,8 +3,16 @@
         <script>
             function canVote() {
                 var age = document.getElementById("age").value;
-                
+                var msg = age >= 18 ? "you can vote" : "sorry" ;
+                console.log(msg);
             }
         </script>
     </head>
+    <body>
+        <div>
+            <label for="age" id="label">Enter Ur Age</label>
+            <input type="text" id="age" />
+            <button onclick="canVote()">can vote</button>
+        </div>
+    </body>
 </html>
