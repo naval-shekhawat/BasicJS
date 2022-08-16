@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age checker</title>
+</head>
+<body>
+    <h1>Age checker</h1>
+    <script>
+        function AgeChecker(){
+        var age = document.getElementById("age").value;
+        if (age>=19) {
+            console.log("Your an a adult");
+            console.log("You can vote");
+        }
+        else if (age>=15 || age<19){
+            console.log("Your an a minor");
+            console.log("You can't vote");
+        }
+        else if (age>=10 || age<15){
+            console.log("your an a kid");
+        }
+        else{
+            console.log("Data error")
+        }
+        console.log("\nThank you for giving data")
+    }
+    </script>
+    <div>
+        <label for ="age" id = "myLabel">My age</label>
+        <input type="text" id = "age" />
+        <button onClick="AgeChecker()">CheckForVote</button>
+    </div>
+</body>
+</html>
