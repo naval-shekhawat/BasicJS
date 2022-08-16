@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function getDivision(){
+                var marks = document.getElementById("marks").value;
+                if (marks >=75){
+                    console.log("you got distinction");
+                } else if (marks >= 60){
+                    console.log("You have got first class");
+                } else if (marks >=45){
+                    console.log("second class");
+                } else {
+                    console.log("sorry but you did not clear the exam")
+                }
+            }   
+            
+            
+        </script>
+    </head>
+    <body>
+       
+      <div>
+        <label for ="marks" id="myLable">Enter your age</label>
+        <input type="text" id="marks"/>
+        <button onclick="getDivision()">marks</button>
+       </div>
+       
+    </body>
+</html>
