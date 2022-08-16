@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <script>
+      (function printNumbers() {
+        let numbers = [1, 6, 76, 34, 5, 9];
+         for (var counter = 0; counter < numbers.length; counter = counter++) {
+          console.log(numbers[counter]);
+          if (numbers[counter] == 34){
+            break;
+          }
+        } 
+      })();  
+        // console.time("Loop")
+        // var counter = 1;
+        // while (counter < 1000) {
+        //   console.log(counter = counter +2);
+        //   counter++;
+        // }
+        // console.timeEnd("Loop");
+    </script>
+  </body>
+</html>>
