@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <body>
+<h1>IncreasingOrder && DecreasingOrder</h1>
+<script>
+    function IncreasingOrder_DecreasingOrder() {
+        var a = 25;
+        var b = 34;
+        var c = 42;
+        var num = document.getElementById("num").value;
+        if (a < b && b < c) {
+           console.log("IncreasingOrder");
+        }
+        else if (a > b && b > c) {
+            console.log("DecreasingOrder");
+        }
+        else{
+            console.log("Neither Increasing or Decreasing order");
+        }
+    }
+    </script>
+    <div>
+        <label for ="num" id = "myLabel">My num</label>
+        <input type="text" id = "num" />
+        <button onClick="IncreasingOrder_DecreasingOrder()">InputNumber</button>
+    </div>
+</body>
+</html>
+
+
+         
