@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <body>
+<h1>QuadraticEquation</h1>
+<script>
+    (function () {
+
+        function getQuardarticEquation(a, b, c) {
+         var discriminant = b * b - 4 * a * c ;
+         if (discriminant == 0) {
+           return - b / (2 * a);
+         } else if (discriminant > 0) {
+            var root1 = (-b + Math.sqrt(discriminant)) / (2 * a) ;
+            var root2 = (-b - Math.sqrt(discriminant)) / (2 * a) ;
+            return root1 + "" + root2;
+         } else {
+            return "No roots";
+            }
+        }
+        console.log("getQuardarticEquation(2,16,4)"+ getQuardarticEquation(2,16,4));
+        })();
+    </script>
+    <!-- <div>
+        <label for ="num" id = "myLabel">My num</label>
+        <input type="text" id = "num" />[]
+        <button onClick="IncreasingOrder_DecreasingOrder()">InputNumber</button>
+    </div> -->
+</body>
+</html>
