@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function canVote(){
+                var age = document.getElementById("age").value
+                //     age >=18
+                //     ? console.log("congrats you can vote")
+                //     : console.log("can't vote")
+
+               var msg = age >= 18 ? "Congrats you can vote in India" : "Can't vote";
+               console.log(msg);
+            }
+        </script>
+      
+    </head>
+    <body>
+        <label for ="age" id = "myLabel">age</label>
+        <input type="text" id = "age" />
+        <button onclick="canVote()">Results</button>
+    </body>
+</html>
