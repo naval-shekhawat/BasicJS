@@ -1,0 +1,28 @@
+<html>
+    <head>
+        
+        <script>
+             function GetNational(){
+                var country = document.getElementById("country").value;
+                switch(country){
+                    case "IND":
+                       console.log("Your an a indian")
+                         break;
+                    case "USA":
+                        console.log("Your an a American")
+                         break;
+                    default:
+                          break;
+                }
+            } 
+        </script>
+   </head>
+
+   <body>
+        <label for ="country" id = "myLabel">country</label>
+        <input type="text" id = "country" />
+        <button onclick="getNationality()">Get Nationality</button>
+    </body>
+      
+    
+</html>
