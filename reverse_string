@@ -1,0 +1,13 @@
+(function(){
+
+    function reverseString(str){
+        let updateString = "";
+        for(let i = 0; i <= str.length - 1; i--){
+            updatestring = updateString + str[i];
+        }
+        return updateString;
+    }
+    console.log(reverseString("Coding is fun"));
+    console.log(reverseString("Bruce wayne is batman"));
+
+})();
