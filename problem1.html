@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (function(){
+                 let  temp, raining;
+                 temp = prompt("enter a temp value:");
+
+    
+    if (temp>=20 && temp<=25) {
+        console.log("Go out and play");
+    }else if(temp>=18 && temp<=20){
+           if (raining==true){
+            console.log("don't go out and play");
+           }
+            else {
+            console.log("go out and play");
+           }
+    }
+})();//iife
+</script>
+</body>
+</html>
