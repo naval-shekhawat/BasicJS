@@ -1,6 +1,6 @@
 (function(){
     function fibonacci(number){
-        let pervious = 0,current =1, output = 0;
+        let previous = 0,current =1, output = 0;
         console.log(previous);
         console.log(current);
         for(let i = 1; i<=5 ; i++){
