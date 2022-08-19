@@ -16,10 +16,11 @@
         return sum;
     }
 
-        console.log((findArmstrongno(153)));
+       
         console.log((findArmstrongno(121)));
+        console.log((findArmstrongno(153)));
         console.log((findArmstrongno(371)));
-        // for the case of 121 its not working....
-        // and this proggrame will not applicable for four digit nummbers 
+    
+        // but this proggrame will not applicable for four digit nummbers 
        
 })();
