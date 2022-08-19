@@ -1,12 +1,11 @@
 (function(){
-    function PassorNot(marks){
-       return marks >=40 ? "You are pass" : "you're fail";
+    function getOfficeDistance(x,y){
+        let t = ((x*y)-(5*x)+(y)-10);
+        dist = x*(t+y);
+        if(dist >=0){return dist;}
+        else{console.log("Put valid values dist cannot be Negative")}
     }
-
-    console.log(PassorNot(60));
-    console.log(PassorNot(70));
-    console.log(PassorNot(08));
-    console.log(PassorNot(100));
-    console.log(PassorNot(45));
-    console.log(PassorNot(22));
+    var speed = 5
+    var time = 2
+    console.log(getOfficeDistance(speed,time));
 })();
