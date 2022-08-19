@@ -1,21 +1,9 @@
 (function(){
-    
-    function HowtoPlay(temp,rain){
-      if(temp>20 && temp<25 && rain == false) {
-        console.log('Go Play OUTSIDE !!')
-      }
-      else if(temp>18 && temp<20 && rain==true){
-        console.log('Go To Play In SCHOOL !!')
-
-      } 
-      else{console.log('STAY AT HOME !!')
+    function getPrismHeight(volume,radius,perimeter){
+        height = (volume*2)/(radius*perimeter);
+        return height;
     }
-}
-console.log(HowtoPlay(24,false));
-console.log(HowtoPlay(19.5,true));
-console.log(HowtoPlay(22,false));
-console.log(HowtoPlay(24,true));
-
-    
-
+    console.log(getPrismHeight(4,5,6));
+    console.log(getPrismHeight(60,6,6));
+    console.log(getPrismHeight(40,5,16));
 })();
