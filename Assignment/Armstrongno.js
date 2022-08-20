@@ -17,7 +17,7 @@
     }
 
        
-        console.log((findArmstrongno(121)));
+        
         console.log((findArmstrongno(153)));
         console.log((findArmstrongno(371)));
     
