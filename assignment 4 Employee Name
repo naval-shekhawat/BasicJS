@@ -1,0 +1,20 @@
+(function findDesignation(){
+            var employeeName =  document.getElementById("employeeName").value; 
+            switch (true) {
+                case employeeName == "Alex":
+                 console.log("employeName" + " is a Developer")
+                  break;
+                case employeeName == "John":
+                 console.log('employeeName' + " is an Artist")
+                  break;
+                case employeeName == "streak":
+                  console.log('employeeName' +  " is an Singer")
+                  break;
+                case employeeName == "smith":
+                   console.log('employeeName' + " is an Actor")
+                default:
+                  console.log('"Enter valid employeeName')
+                   break;
+                   
+            }
+        })();
