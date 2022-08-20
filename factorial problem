@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function factorial(n){
+                
+                if (n == 0) return 1;
+                return n * factorial (n-1);
+                    
+            }  
+               
+            
+            function calucate(){
+            let number = document.getElementById("input").value;
+            document.getElementById("output").value = factorial(number);
+            
+            }
+        </script>
+
+
+        <body>
+           <lable for ="number">Enter your number here</lable>
+           <input type="text" id="input"/>
+           <buton id="submit" onclick="calculator()">factorial</buton>
+           <br/>
+           <br/>
+           <lable for="number">Your square is</lable>
+           <input type="text" id ="output"/>
+          
+        </body>
+    </head>
+</html>
