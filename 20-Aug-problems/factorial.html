@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Javascript</title>
+    <script>
+      function factorial(n) {
+        if (n == 0) return 1; //tail condition
+        return n * factorial(n - 1);
+      }
+
+      function calculate() {
+        let number = document.getElementById("input").value; // getter
+        document.getElementById("output").value = factorial(number); //setter
+      }
+    </script>
+  </head>
+  <body>
+    <label for="number">Enter your number here</label>
+    <input type="text" id="input" />
+    <button id="submit" onclick="calculate()">Factorial</button>
+    <br />
+    <br />
+    <label for="number">Your output is</label>
+    <input type="text" id="output" />
+  </body>
+</html>
