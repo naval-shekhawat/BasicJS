@@ -1,18 +1,14 @@
 (function(){
+   
+    function addNumbers(a,b){
+        while(b > 0) {
+            a++;
+            b--;
+        }
+        return a;
+    }
 
-    function sumtwonowithoutaddition(num1, num2){
-        if(num1 >0 && num2>0)
-        {
-            while(num2 > 0){
-                num1++;
-                num2--;
-            }
-            return num1;
-        }
-        else {
-            return -1;
-        }
-            
-        }
-        console.log(sumtwonowithoutaddition(10,15));
+    console.log(addNumbers(10,20));
+    console.log(addNumbers(20,10));
+    console.log(addNumbers(123,25));
 })();

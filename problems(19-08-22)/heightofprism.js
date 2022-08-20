@@ -1,9 +1,13 @@
 (function(){
 
-    function findHeight(volume, perimetre, radius){
-        let semiperimetre = perimetre /2;
-        let h = volume / (radius * semiperimetre);
-        return h;
+    function getHeightOfThePrism(radius, perimeter, volume){
+        let semiperimeter = perimeter /2 ;
+        let height = volume / (radius * semiperimeter);
+        return height;
     }
-    console.log(findHeight(3, 15, 270));
+
+
+    console.log(getHeightOfThePrism(3, 15, 270));
+
+
 })();
