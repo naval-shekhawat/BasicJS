@@ -1,4 +1,4 @@
-(function(num1,num2){
+(function palindrome(num1,num2){
     for(i=num1; i<=num2; i++){
       var n=i;
       var rev=0;
@@ -11,4 +11,5 @@
          console.log("output " + i);
         }
     }
-})(0,50);
+    console.log(palindrome(0,50);
+})
