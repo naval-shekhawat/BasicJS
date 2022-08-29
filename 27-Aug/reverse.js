@@ -25,6 +25,5 @@
 
     }
 
-    console.log(reverse([1,2,3,4,5,6]))
-
+    console.log(reverse([2,5,6,9])) // [9,6,5,2]
 })()
