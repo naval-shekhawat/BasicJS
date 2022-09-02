@@ -1,6 +1,11 @@
 (function() {
 
         function multiply(first, second, r1,c1,r2,c2){
+            if(c1 != r2) {
+                console.log("Cannot multiple");
+                return;
+            }
+
             let sum = 0;
             let output = [[],[],[]];
             for(let i =0; i < r1; i++) {
