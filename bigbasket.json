@@ -1,0 +1,83 @@
+
+
+let bigBasket =[
+    {"shop":{
+        "bestsellers":{
+            "eggs":{
+                "tabletray":12,
+                "medium":"size",
+                "antibioticReduciefree":"paper",
+                "standarddelivery": "13 sep",
+                "deliverytime":"9:00am to 3:00pm",
+                "price":{
+                    "perpcs":12,
+                    "rs":82.00,
+
+                }
+            },
+            "carrots":{,
+                "color"{
+                    "orange": loose,
+                    "red":loose,
+                },
+                "tabletray":12,
+                "medium":"size",
+                "antibioticReduciefree":"paper",
+                "standarddelivery": "13 sep",
+                "deliverytime":"9:00am to 3:00pm",
+                "price":{
+                    "perpcs":12,
+                    "rs":82.00,
+
+                }
+            },
+           "tamato":{
+            "type":{
+                "local":"loose",
+                "hybrid":"loose",
+
+            },
+
+                "tabletray":12,
+                "medium":"size",
+                "antibioticReduciefree":"paper",
+                "standarddelivery": "13 sep",
+                "deliverytime":"9:00am to 3:00pm",
+                "price":{
+                    "kg":12,
+                    "rs":82.00,
+
+                },
+                "rice":{
+                    "Akki":"none",
+                    "raw":"none",
+                    "brand":{
+                        "type1":"sonamasoori",
+                        "type2":"HTM rice",
+                        "type3":"basmati"
+
+                    }
+                    
+                    },
+                    "tabletray":12,
+                    "medium":"size",
+                    "antibioticReduciefree":"paper",
+                    "standarddelivery": "13 sep",
+                    "deliverytime":"9:00am to 3:00pm",
+                    "price":{
+                        "kg":12,
+                        "rs":182.00,
+    
+            }
+        }
+            
+let maxPrice =0; itemName ='';
+for(let currentItem of grociers){
+    if(currentItem >maxPrice){
+        maxPrice = currentItem.price
+        itemName =currentItem.name+"("+currentItem.brand")
+
+    }
+}
+console.log("mav price is"+maxPrice);
+// console.log(student);
