@@ -1,5 +1,5 @@
-
 let bankingModule = (function(openingAmount){
+
     let balance = openingAmount;
     function getBalance() {
         return balance;
