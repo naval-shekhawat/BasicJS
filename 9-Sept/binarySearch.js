@@ -15,5 +15,5 @@ function binarySearch(arr, item, start, end){
 }
 
 
-let numbers = [10,20,30,40,50,60,70,80,90,100];
-console.log(binarySearch(numbers, 80, 0, numbers.length - 1))
+let numbers = [10,20,20,20,50,60,70,80,90,100];
+console.log(binarySearch(numbers, 20, 0, numbers.length - 1))
