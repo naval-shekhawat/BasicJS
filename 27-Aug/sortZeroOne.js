@@ -20,6 +20,6 @@
 
     }
 
-    let arr = [1,0,0,1,1,0,1];  
+    let arr = [1,0,0,1,1,0,1];  // [0,1,1,0,0,1,0,0,1,0,1] Sir this program is not working with this input
     console.log(sortZeroOne(arr, arr.length))
 })();
