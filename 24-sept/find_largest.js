@@ -7,7 +7,6 @@ function findLargestAtPosition(arr, position){
             }
         }
     }
-
     return arr[N - position];
 }
 
