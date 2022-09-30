@@ -1,42 +1,70 @@
+let numbers = [15,20,100,50,1,250];
+let countries = ["India", "Italy", "Brazil","Bhutan", "China", "Austria"];
+let stringNumbers = ['15','20','100','50','1','250'];
 
-let compareFunction = function(a,b) {
-    return a - b;
+function compareFunction(a,b){
+    return b - a;
 }
 
-let numbers = [15,20,100,50,1,250];
-let countries = ["India", "Italy", "Brazil", "China", "Austria"]
-let stringNumbers = ['15', '20', '100','50','1','250'];
-let mixedNumbers = ['15', 1, "23", 22 , undefined,17, 150, "Sushovan"];
+numbers.sort(compareFunction);
+console.log(numbers);
 
-console.log("numbers" + numbers.sort());
-console.log("numbers with compare" + numbers.sort(compareFunction));
-console.log("str Number " + stringNumbers.sort());
-console.log("str Number with Compare " + stringNumbers.sort(compareFunction));
-console.log(countries.sort());
-console.log("mixed Number " + mixedNumbers.sort());
-console.log("mixed Number with Compare " + mixedNumbers.sort(compareFunction));
+countries.sort();
+console.log(countries);
 
+stringNumbers.sort();
+console.log(stringNumbers);
 
-let employees = [
-    {
-        name: "Sushovan",
-        salary: 120000
-    },
-    {
-        name: "Jayesh",
-        salary: 100000
-    },
-    {
-        name: "Preeti",
-        salary: 115000
-    }];
+stringNumbers.sort(compareFunction);
+console.log(stringNumbers); 
+
+let mixedNumbers = ['15',20,'100',50,1,'250'];
+mixedNumbers.sort(compareFunction);
+console.log(mixedNumbers); 
 
 
-    employees.sort(function(a,b){
-        return a.salary - b.salary;
+let sparseArray = [5, 1, 79,-1, 0, -5,"","false", false, ,true, "true", undefined, "zero"];
+sparseArray.sort();
+console.log(sparseArray); 
+
+let superHeroes = [{
+    name: "Spiderman",
+    rating: 7,
+    strength: 8
+},
+{
+    name: "Iron man",
+    rating: 8,
+    strength: 10
+},
+{
+    name: "Captain America",
+    rating: 6,
+    strength: 9
+},
+{
+    name: "Hawk Eye",
+    rating: 5,
+    strength: 4
+},
+{
+    name: "Hulk",
+    rating: 9,
+    strength: 10
+}];
+
+function sortByProperty(arr, property){
+    arr.sort(function(curr, prev) {
+        return curr[property] - prev[property];
     });
+}
 
-    for(let i in employees) {
-        console.log(employees[i])
-    }
+// sort it by rating
+console.log("using rating");
+sortByProperty(superHeroes,"rating");
+console.log(superHeroes);
 
+// sort it by strength
+console.log("using strength")
+sortByProperty(superHeroes,"strength");
+console.log(superHeroes);
