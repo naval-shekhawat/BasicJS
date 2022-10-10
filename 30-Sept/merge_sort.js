@@ -1,4 +1,4 @@
-function merge(arr, start, mid, end){ 
+function merge(arr, start, mid, end){ // n
         let firstArrLength = mid - start + 1;
         let secondArrLength = end - mid;
         let firstArr =  new Array(firstArrLength);
@@ -13,7 +13,6 @@ function merge(arr, start, mid, end){
         }
 
         let first = 0, second = 0, final = start;
-        
         while(first < firstArrLength && second < secondArrLength){
             if(firstArr[first] <= secondArr[second]) {
                 arr[final] = firstArr[first];
@@ -31,7 +30,7 @@ function merge(arr, start, mid, end){
             first++;
             final++;
         }
-
+        // second 
         while(second < secondArrLength) {
             arr[final] = secondArr[second];
             second++;

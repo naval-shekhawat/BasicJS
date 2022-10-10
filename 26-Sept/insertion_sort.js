@@ -3,11 +3,11 @@ function insertionSort(arr, N){
         let previousIndex = i - 1; 
         let currentItem = arr[i]; 
 
-        while(previousIndex > -1 && currentItem < arr[previousIndex]) {
+        while(previousIndex > -1 && currentItem < arr[previousIndex]) { //N
             arr[previousIndex + 1] = arr[previousIndex];
-            previousIndex--; //
+            previousIndex--;
         }
-        console.log("Pass " + i +  " " + arr)
+        console.log("Pass " + i +  " " + arr) 
         arr[previousIndex + 1] = currentItem;
     }
 
